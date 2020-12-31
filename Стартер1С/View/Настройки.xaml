@@ -1,0 +1,34 @@
+﻿<Window x:Name="Win2" x:Class="Стартер1С.Настройки"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Стартер1С"
+        mc:Ignorable="d"
+        Title="Настройки" Height="304.615" Width="457.692" WindowStyle="None"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFF3E9B8" Offset="0"/>
+                <GradientStop Color="#FFECDC98" Offset="1"/>
+                <GradientStop Color="#FFE0C54B" Offset="0.508"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Укажите путь к папке bin с 1cv8.exe" HorizontalAlignment="Left" Margin="20,78,0,0" VerticalAlignment="Top" Width="349"/>
+        <TextBox x:Name="txtBox1" HorizontalAlignment="Left" Height="23" Margin="20,101,0,0" TextWrapping="Wrap" Text="C:\Program Files\1cv8" VerticalAlignment="Top" Width="379"/>
+        <Button x:Name="but1" Content="..." HorizontalAlignment="Left" Margin="404,101,0,0" VerticalAlignment="Top" Width="19" Click="but1_Click" Background="#FFE8D76B"/>
+        <TextBox x:Name="txtBox2" HorizontalAlignment="Left" Height="23" Margin="21,159,0,0" TextWrapping="Wrap" Text="C:\Program Files\1cv8\common\1cestart.exe" VerticalAlignment="Top" Width="378"/>
+        <Button Content="..." HorizontalAlignment="Left" Margin="404,159,0,0" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.182,1.208" Click="Button_Click" Background="#FFDACD44"/>
+        <Label Content="Укажите путь к файлу 1CESTART.EXE" HorizontalAlignment="Left" Margin="21,136,0,0" VerticalAlignment="Top" Width="229"/>
+
+        <Button x:Name="button" Margin="0,10,10,0" VerticalAlignment="Top" Background="#FFFBE26F" Height="30" Click="button_Click_1" HorizontalAlignment="Right" Width="30">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="pack://application:,,,/Resources/Закрыть окно-48.png" Margin="0" Height="24" Width="22" />
+
+            </StackPanel>
+        </Button>
+
+
+    </Grid>
+</Window>

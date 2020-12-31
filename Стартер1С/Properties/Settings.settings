@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Стартер1С.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="pathBin1c" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\1cv8</Value>
+    </Setting>
+    <Setting Name="path1Csestart" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\1cv8\common\1cestart.exe</Value>
+    </Setting>
+    <Setting Name="nomStart" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="path_db" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

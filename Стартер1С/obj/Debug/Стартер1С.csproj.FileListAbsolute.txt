@@ -1,0 +1,52 @@
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\bin\Debug\Стартер1С.exe.config
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\bin\Debug\Стартер1С.exe
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\bin\Debug\Стартер1С.pdb
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Стартер1С_MarkupCompile.cache
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Стартер1С_MarkupCompile.lref
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Стартер1С.g.resources
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Стартер1С.Properties.Resources.resources
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Стартер1С.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Стартер1С.exe
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Стартер1С.pdb
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Настройки.g.cs
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Настройки.baml
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Window1.g.cs
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Window1.baml
+C:\Users\Admin\Desktop\Стартер1С\Стартер1С\obj\Debug\Стартер1С.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\bin\Debug\Стартер1С.exe.config
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\bin\Debug\Стартер1С.exe
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\bin\Debug\Стартер1С.pdb
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\Стартер1С.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\Стартер1С_MarkupCompile.cache
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\Стартер1С_MarkupCompile.lref
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\Стартер1С.g.resources
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\Стартер1С.Properties.Resources.resources
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\Стартер1С.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\Стартер1С.exe
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\Стартер1С.pdb
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\View\Window1.g.cs
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\View\Настройки.g.cs
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\View\MainWindow.g.cs
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\View\MainWindow.baml
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\View\Window1.baml
+C:\Users\Admin\Desktop\Стартер1С - копия\Стартер1С\obj\Debug\View\Настройки.baml
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\bin\Debug\Стартер1С.exe.config
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\bin\Debug\Стартер1С.exe
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\bin\Debug\Стартер1С.pdb
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\Стартер1С.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\View\MainWindow.g.cs
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\View\Настройки.g.cs
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\Стартер1С_MarkupCompile.cache
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\Стартер1С_MarkupCompile.lref
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\View\MainWindow.baml
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\View\Настройки.baml
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\Стартер1С.g.resources
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\Стартер1С.Properties.Resources.resources
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\Стартер1С.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\Стартер1С.exe
+C:\Users\Admin\Desktop\Стартер1С_DataContext_в_App\Стартер1С\obj\Debug\Стартер1С.pdb

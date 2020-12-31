@@ -1,0 +1,224 @@
+﻿<Window x:Class="Стартер1С.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Стартер1С"
+        mc:Ignorable="d"
+        Title="Мульти-Старт" Height="604" Width="444.333" WindowStyle="None"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStartupLocation="CenterScreen">
+
+
+    <Window.Resources>
+        <Style x:Key="ScrollBarLineButtonStyle" TargetType="{x:Type RepeatButton}">
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Canvas Height="18">
+                            <Polygon Fill="#FFFDC83A" Points="3,15 15,15 9,3"></Polygon>
+                        </Canvas>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ScrollBarLineButtonBottomStyle" TargetType="{x:Type RepeatButton}">
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Canvas Height="18">
+                            <Polygon Fill="#FFF9C94A" Points="3,3 9,15 15,3"></Polygon>
+                        </Canvas>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ScrollBarPageButtonStyle" TargetType="{x:Type RepeatButton}">
+            <Setter Property="IsTabStop" Value="False"/>
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Border BorderBrush="#FFF3AC12"></Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ScrollBarThumbStyle" TargetType="{x:Type Thumb}">
+            <Setter Property="IsTabStop" Value="False"/>
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="Margin" Value="1,0,1,0" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Thumb}">
+                        <Rectangle Fill="#FFFBCA49" Margin="2"></Rectangle>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <ControlTemplate x:Key="VerticalScrollBar" TargetType="{x:Type ScrollBar}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition MaxHeight="18"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition MaxHeight="18"/>
+                </Grid.RowDefinitions>
+
+                <RepeatButton Grid.Row="0" Height="18"
+                          Style="{StaticResource ScrollBarLineButtonStyle}"
+                          Command="ScrollBar.LineUpCommand" Background="#FFF7F176" >
+                </RepeatButton>
+                <Track Name="PART_Track" Grid.Row="1" 
+                   IsDirectionReversed="True">
+                    <Track.DecreaseRepeatButton>
+                        <RepeatButton Command="ScrollBar.PageUpCommand" Style="{StaticResource ScrollBarPageButtonStyle}" Background="#FFF7C050">
+                        </RepeatButton>
+                    </Track.DecreaseRepeatButton>
+                    <Track.Thumb>
+                        <Thumb Style="{StaticResource ScrollBarThumbStyle}">
+                        </Thumb>
+                    </Track.Thumb>
+                    <Track.IncreaseRepeatButton>
+                        <RepeatButton Command="ScrollBar.PageDownCommand" Style="{StaticResource ScrollBarPageButtonStyle}" Background="#FFFBC964">
+                        </RepeatButton>
+                    </Track.IncreaseRepeatButton>
+                </Track>
+                <RepeatButton Grid.Row="3" Height="18"
+                          Style="{StaticResource ScrollBarLineButtonBottomStyle}"
+                          Command="ScrollBar.LineDownCommand" Background="#FFFDF773">
+                </RepeatButton>
+            </Grid>
+        </ControlTemplate>
+
+        <Style TargetType="{x:Type ScrollBar}">
+            <Setter Property="Template" Value="{StaticResource VerticalScrollBar}"/>
+        </Style>
+    </Window.Resources>
+
+
+
+    <Grid Margin="-3,0,-1,0" Background="#FFEAE0A1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StatusBar x:Name="StatusBar2" Height="32" VerticalAlignment="Bottom" FontSize="14">
+            <StatusBar.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFBBC60" Offset="0"/>
+                    <GradientStop Color="#FFE4BE86" Offset="1"/>
+                    <GradientStop Color="#FFF5EFB2" Offset="0.383"/>
+                    <GradientStop Color="#FFC9C59E" Offset="0.704"/>
+                </LinearGradientBrush>
+            </StatusBar.Background>
+
+            <StatusBarItem Content="{Binding Path=SpisokDir[0].DirCount}" Height="32" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="#FFA88014" Margin="10,0,0,0"/>
+            <StatusBarItem x:Name="StatusBarItem2" Content="{Binding SelectedCatalog.DirPath}" Height="32" VerticalAlignment="Top" FontSize="12" Width="411" Foreground="#FFAE7718" FontWeight="Bold"/>
+
+        </StatusBar>
+
+
+
+
+        <StatusBar x:Name="StatusBar1" FontSize="14" Height="36" VerticalAlignment="Top" VerticalContentAlignment="Center" Margin="0,-1,8,0">
+            <StatusBar.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFDF1B9" Offset="0"/>
+                    <GradientStop Color="#FFFFEC94" Offset="0.957"/>
+                    <GradientStop Color="#FFEDB674" Offset="0.304"/>
+                </LinearGradientBrush>
+            </StatusBar.Background>
+            <Button x:Name="but03_Copy" Command="{Binding Update}" VerticalAlignment="Top" Background="#FFFBE26F" Height="30" ToolTip="Обновить указанный каталог с БД" HorizontalAlignment="Left" Width="30">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="pack://application:,,,/Resources/refresh1.png" Margin="0" Height="24" Width="22" />
+
+                </StackPanel>
+            </Button>
+            <StatusBarItem x:Name="StatusBarItem1" Content="{Binding Path=SpisokDir[0].CatalogPath}" Width="359" FontSize="10" HorizontalAlignment="Left" Foreground="#FFA26915" FontWeight="Bold"/>
+            <Button x:Name="but03_Copy2" Command="{Binding OpenDialog}" VerticalAlignment="Top" Background="#FFFBE26F" Height="30" Width="30">
+                <StackPanel Orientation="Horizontal" Height="30" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="pack://application:,,,/Resources/open_256_icon-icons.com_76002.png" Margin="0,4,0,2" Height="30" Width="30" ToolTip="Открыть каталог с папками БД и показать список" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+                </StackPanel>
+            </Button>
+
+        </StatusBar>
+
+
+        <ListBox x:Name="ListBox1" ItemsSource="{Binding SpisokDir}" SelectedItem="{Binding SelectedCatalog}" Margin="5,39,52,34" FontSize="16" FontWeight="Bold">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFECDF8C" Offset="0"/>
+                    <GradientStop Color="#FFEAE1A4" Offset="1"/>
+                    <GradientStop Color="#FFF3EBB8" Offset="0.388"/>
+                    <GradientStop Color="#FFF9F6E0" Offset="0.734"/>
+                    <GradientStop Color="#FFF3EBB2" Offset="0.145"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="3" Orientation="Horizontal">
+                        <Image Source="pack://application:,,,/Resources/bd_1.png" Width="30" Height="30"/>
+                        <TextBlock FontSize="18" Text="{Binding Path=DirName}" Margin="5"/>
+
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="but03" Command="{Binding Close}"  VerticalContentAlignment="Stretch" HorizontalContentAlignment="Right" Height="33" VerticalAlignment="Top" HorizontalAlignment="Right" Width="8" Background="#FFF04F3E">
+
+            <StackPanel  >
+                <Image Source="pack://application:,,,/Resources/Закрыть окно-48.png"    />
+            </StackPanel>
+        </Button>
+        <StackPanel Margin="395,36,5,194">
+            <Image Height="7" />
+            <Button x:Name="but01" Command="{Binding OpenEnterprise}" HorizontalAlignment="Right" Width="30" Height="30" VerticalAlignment="Top" FontSize="14" Background="#FFF7E281"   Margin="0,0,5,0">
+                <StackPanel Height="30" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="../Resources/1c_pl.png" ToolTip="Запуск в режиме 'Предприятие'" Margin="0,0,4,0" Height="29" Width="22" HorizontalAlignment="Right" />
+                </StackPanel>
+
+            </Button>
+            <Image Height="10" />
+            <Button x:Name="but02" Command="{Binding OpenConfigurator}" VerticalAlignment="Top" Height="30"  FontSize="16" Background="#FFF3DE7D" Margin="0,0,5,0" HorizontalAlignment="Right" Width="30">
+                <StackPanel Height="30" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Height="30" Source="../Resources/1c_conf.png" ToolTip="'Запуск в режиме Конфигуратора'" Margin="0,0,4,0" Width="30"/>
+                </StackPanel>
+            </Button>
+            <Image Height="100" />
+            <Button x:Name="but03_Copy1" Command="{Binding CreateBD}" VerticalAlignment="Bottom" Background="#FFFBE26F" Height="30" Margin="0,0,5,0" HorizontalAlignment="Right" Width="30">
+                <StackPanel Orientation="Horizontal" Height="30" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="pack://application:,,,/Resources/dtCF_1CD.png" Margin="0" Height="30" Width="30" ToolTip="Выбрать каталог с dt и cf файлами и создать из них БД" HorizontalAlignment="Right" VerticalAlignment="Center" />
+
+                </StackPanel>
+            </Button>
+            <Button x:Name="but03_Copy4" Command="{Binding CreateEmptyBD}" VerticalAlignment="Bottom" Background="#FFFBE26F" Height="30" Margin="0,0,5,0" HorizontalAlignment="Right" Width="30">
+                <StackPanel Orientation="Horizontal" Height="30" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="../Resources/database-add.png" Margin="0" Height="30" Width="30" ToolTip="Создать пустую БД без конфигурации" HorizontalAlignment="Right" VerticalAlignment="Center" />
+
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="but02_Copy" Command="{Binding Copy}" VerticalAlignment="Top" Height="30"   FontSize="16" Background="#FFF3DE7D" Margin="0,0,5,0" HorizontalAlignment="Right" Width="30">
+                <StackPanel Height="30" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Height="30" Source="../Resources/Copy.png" ToolTip="Копировать выделенную в списке БД" Margin="0,0,4,0" Width="30"/>
+                </StackPanel>
+            </Button>
+            <Image Height="30" />
+            <Button x:Name="but03_Copy3" Command="{Binding OpenSetting}" Background="#FFFBE26F"  ToolTip="Настройки" Height="30" VerticalAlignment="Bottom" Margin="0,0,5,0" HorizontalAlignment="Right" Width="30">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30">
+                    <Image Source="pack://application:,,,/Resources/Сервис.png" Margin="0" Height="29" Width="30" />
+
+                </StackPanel>
+            </Button>
+
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
